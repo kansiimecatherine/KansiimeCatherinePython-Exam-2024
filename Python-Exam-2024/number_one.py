@@ -17,7 +17,7 @@ circle_area(radius)
 
                            #NO.1(ii)
 def sum_of_odd_numbers ():
-    integers = [4,7,2,9,12,15]
+    integers = [4,7,2,9,12,15]# list of integers
     sum = 0 #initializing the sum
 
     #using a for loop
@@ -30,24 +30,20 @@ sum_of_odd_numbers() #calling the function
 
 
                            #NO.1(iii)
-def number_operations(number_one, number_two):
+def number_operations():
     # computing the operations
     sum = number_one + number_two
-    difference = number_two - number_one
+    difference = number_one - number_two
     product = number_one * number_two
+    quotient = number_one / number_two
 
-#using if, else to compute the quotient
-    if number_two != 0:
-        quotient = number_two / number_one
-    else:
-        print("undefined")
-    return sum, difference, product, quotient #returning the operations
+    return sum, difference, product, quotient  #returning the operations
 
 #inputing numbers
 number_one = int(input("\nEnter the first number:   "))
 number_two = int(input("Enter the second number:    "))
 
-sum, difference, product, quotient = number_operations(number_one, number_two)
+sum, difference, product, quotient = number_operations()
 
 print(f"\nThe sum of numbers is : {sum} ")
 print(f"The difference of numbers is : {difference} ")

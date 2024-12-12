@@ -10,6 +10,7 @@ def student_details ():
     data_science = int(input("Enter the data science marks:  "))
     computer_applications = int(input("Enter the computer applications marks:  "))
 
+    #average = total_marks / number of subjects.
     average_mark = (programming + data_science + computer_applications) /3
     print(f"\nThe average mark is : {average_mark : .3f}",'\n\n')
 
